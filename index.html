@@ -1,8 +1,8 @@
 <!DOCTYPE html>
+
 <head>
-<script src="/assets/jquery.js"></script>
 <link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="/assets/jquery.js"></script>
 <style>
 body {
   font-family: helvetica, sans-serif;
@@ -45,20 +45,17 @@ p {
   transition: height .5s;
   -webkit-transition: height .5s;
   -moz-transition: height .5s;
+  
 }
-
 small {
   opacity: 0;
 }
-
 .show-description p {
-  height: 150px;
+ height:150px; 
 }
-
 .show-description small {
   opacity: 1;
 }
-
 .first{
   background-image: url("http://dash.ga.co/assets/firstcourse.jpg");
 }
@@ -71,15 +68,16 @@ small {
 .price {
   float: right;
 }
-@media (max-width: 479px) {
+@media (max-width: 500px) {
   h1 {
-    font-size: 55px;
-    margin-top: 20px;
-    line-height: 40px;
+    font-size:50px;
+    margin-top:20px;
+    Line-height: 40px;
   }
   h2 {
-    font-size: 20px;
-    margin: 20px 0 30px 0;
+    font-size:20px;
+    margin-top:20px;
+    margin-bottom:30px;
   }
   div {
     margin: 20px 12px 0 12px;
@@ -87,12 +85,11 @@ small {
   p {
     font-size: 20px;
     line-height: 24px;
-  }
+      }
   small {
     font-size: 16px;
   }
 }
-
 </style>
 
 </head>
@@ -114,11 +111,9 @@ small {
   <p>fruitcake marzipan pudding dragee <span class="price">$8</span><br />
   <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
 </div>
-
 <script>
-  $('div').on('click', function() {
-      $(this).toggleClass('show-description');
-  });
+$('div').on('click', function() {
+$(this).toggleClass('show-description');
+});
 </script>
-
 </body>
